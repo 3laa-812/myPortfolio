@@ -11,13 +11,13 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <p className="text-muted-foreground">
                 © {currentYear} Portfolio. Built with{" "}
-                <Heart className="inline h-4 w-4 text-red-500" /> using React & Tailwind CSS
+                <Heart className="inline h-4 w-4 text-red-500" /> By 3laa Ragab
               </p>
             </div>
 
             <div className="flex gap-6">
               <a
-                href="https://github.com"
+                href="https://github.com/3laa-812"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -25,7 +25,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/3laa-ragab-812gts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:3laa.r.812@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />

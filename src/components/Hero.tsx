@@ -44,7 +44,7 @@ const Hero = () => {
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
-        
+
         {/* Interactive Gradient Orbs */}
         <div
           className="absolute w-96 h-96 rounded-full blur-3xl opacity-30 transition-all duration-500 ease-out"
@@ -71,11 +71,13 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in-up">
             <p className="text-muted-foreground mb-4 text-lg">Hello, I'm</p>
-            <h2 className="text-4xl md:text-6xl font-bold mb-2 gradient-text">
-              Alex Thompson
+            <h2 className="text-4xl md:text-6xl font-bold my-4 gradient-text">
+              Alaa Ragab
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="animated-gradient-text">Full Stack Developer</span>
+              <span className="animated-gradient-text">
+                Full Stack Developer
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Specializing in MERN Stack • Building scalable web applications
@@ -104,7 +106,7 @@ const Hero = () => {
 
           <div className="animate-fade-in flex gap-6 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/3laa-812"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass-card hover:scale-110 transition-transform"
@@ -112,7 +114,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/3laa-ragab-812gts"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass-card hover:scale-110 transition-transform"
@@ -120,7 +122,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:3laa.r.812@gmail.com"
               className="p-3 rounded-full glass-card hover:scale-110 transition-transform"
             >
               <Mail className="h-6 w-6" />

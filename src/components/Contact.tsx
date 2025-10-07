@@ -73,7 +73,8 @@ const Contact = () => {
               Get In <span className="gradient-text">Touch</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Have a project in mind? Let's work together to create something amazing
+              Have a project in mind? Let's work together to create something
+              amazing
             </p>
           </div>
 
@@ -82,8 +83,9 @@ const Contact = () => {
               <div className="glass-card rounded-2xl p-8">
                 <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-8">
-                  I'm always interested in hearing about new projects and opportunities.
-                  Whether you have a question or just want to say hi, feel free to reach out!
+                  I'm always interested in hearing about new projects and
+                  opportunities. Whether you have a question or just want to say
+                  hi, feel free to reach out!
                 </p>
 
                 <div className="space-y-6">
@@ -94,10 +96,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold mb-1">Email</p>
                       <a
-                        href="mailto:contact@example.com"
+                        href="mailto:3laa.r.812@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        contact@example.com
+                        mailto:3laa.r.812@gmail.com
                       </a>
                     </div>
                   </div>
@@ -109,10 +111,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold mb-1">Phone</p>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+201033527273"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
+                        +20 10 3352 7273
                       </a>
                     </div>
                   </div>
@@ -123,7 +125,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold mb-1">Location</p>
-                      <p className="text-muted-foreground">San Francisco, CA</p>
+                      <p className="text-muted-foreground">Egypt</p>
                     </div>
                   </div>
                 </div>
@@ -133,7 +135,10 @@ const Contact = () => {
             <div className="glass-card rounded-2xl p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Name
                   </label>
                   <Input
@@ -146,7 +151,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Email
                   </label>
                   <Input
@@ -160,7 +168,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Message
                   </label>
                   <Textarea

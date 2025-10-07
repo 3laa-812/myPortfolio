@@ -51,11 +51,11 @@ const About = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-muted-foreground">Experience</p>
-                  <p className="font-semibold">3+ Years</p>
+                  <p className="font-semibold">1+ Years</p>
                 </div>
                 <div>
                   <p className="text-muted-foreground">Projects Completed</p>
-                  <p className="font-semibold">25+</p>
+                  <p className="font-semibold">10+</p>
                 </div>
                 <div>
                   <p className="text-muted-foreground">Specialization</p>

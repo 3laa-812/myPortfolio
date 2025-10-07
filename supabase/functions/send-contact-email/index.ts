@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to yourself (replace with your actual email)
     const emailResponse = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["your-email@example.com"], // Replace with your email
+      to: ["3laa.r.812@gmail.com"], // Replace with your email
       replyTo: email,
       subject: `New Contact Form Message from ${name}`,
       html: `
@@ -37,7 +37,7 @@ const handler = async (req: Request): Promise<Response> => {
         <p><strong>From:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${message.replace(/\n/g, "<br>")}</p>
       `,
     });
 
@@ -52,13 +52,10 @@ const handler = async (req: Request): Promise<Response> => {
     });
   } catch (error: any) {
     console.error("Error in send-contact-email function:", error);
-    return new Response(
-      JSON.stringify({ error: error.message }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    return new Response(JSON.stringify({ error: error.message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json", ...corsHeaders },
+    });
   }
 };
 
