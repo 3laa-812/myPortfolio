@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("hero")}
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
           >
-            Portfolio
+            Alaa.dev
           </button>
 
           <div className="hidden md:flex items-center gap-8">
