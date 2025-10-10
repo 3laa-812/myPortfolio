@@ -9,57 +9,78 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
+import nxtStroreImg from "@/assets/projects/nxtStore.png";
+import controlXImg from "@/assets/projects/controlx.png";
+import podcastrImg from "@/assets/projects/podcastr.png";
+import clarityhubImg from "@/assets/projects/clarityhub.png";
+import adiImg from "@/assets/projects/Adi.png";
+import portfolioImg from "@/assets/projects/portfolio.png";
+
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "NxtStore",
       description: "Full-stack e-commerce solution with payment integration",
       longDescription:
         "A comprehensive e-commerce platform built with MERN stack featuring user authentication, product management, shopping cart, and secure payment processing with Stripe integration.",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      tags: ["Next.js", "Node.js", "MongoDB", "Express", "Stripe"],
+      code: "https://github.com/3laa-812/e-commerce",
+      demo: "https://e-commerce-beryl-alpha.vercel.app",
+      image: nxtStroreImg,
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates",
+      title: "ControlX",
+      description:
+        " Production-ready CRM dashboard with comprehensive business management capabilities and real-time updates",
       longDescription:
         "A real-time task management application enabling teams to collaborate effectively with features like drag-and-drop boards, real-time notifications, and progress tracking.",
-      tags: ["React", "Socket.io", "Node.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      tags: ["React", "Kanban Board", "GraphQL", "Refine"],
+      code: "https://github.com/3laa-812/controlX",
+      demo: "https://control-x-sigma.vercel.app",
+      image: controlXImg,
     },
     {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management",
+      title: "Podcastr",
+      description: "AI SaaS Podcast Platform",
       longDescription:
-        "An intuitive dashboard for managing multiple social media accounts with analytics, scheduling posts, and engagement tracking powered by various social media APIs.",
-      tags: ["React", "D3.js", "Express", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+        "a cutting-edge AI-powered SaaS application that empowers users to create, discover, and enjoy podcasts with the help of artificial intelligence. From converting text to audio using multi-voice AI to generating custom podcast thumbnails and offering seamless playback, this platform is designed to deliver a modern and immersive podcasting experience.",
+      tags: ["Next.js", "convex", "ShadCN", "CAMP Ai", "Pollinations API"],
+      code: "https://github.com/3laa-812/podcastr",
+      demo: "https://podcastr-eta-one.vercel.app",
+      image: podcastrImg,
     },
     {
-      title: "Blog Platform",
-      description: "Modern blogging platform with markdown support",
+      title: "ClarityHub",
+      description: "ClarityHub is a sleek developer-focused search companion ",
       longDescription:
-        "A feature-rich blogging platform with markdown editor, syntax highlighting, user comments, and SEO optimization for content creators.",
-      tags: ["React", "Node.js", "MongoDB", "Redis"],
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop",
+        " is a sleek developer-focused search companion that brings together the most relevant content — from YouTube videos, GitHub repositories, and Tech articles — in one beautiful, reactive interface",
+      tags: ["React", "motion", "API Integration", "Zustand"],
+      code: "https://github.com/3laa-812/clarityhub",
+      demo: "https://clarityhub-opal.vercel.app",
+      image: clarityhubImg,
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with forecasts",
+      title: "Adi",
+      description: "Smart Toll Collection System",
       longDescription:
-        "A beautiful weather application providing real-time weather data, 7-day forecasts, and interactive maps using OpenWeather API.",
+        "A modern, bilingual (Arabic RTL + English) Smart Toll Collection System frontend built with React, TypeScript, and TailwindCSS. This system manages automated toll gate payments using BLE technology, real-time balance tracking, and seamless user experience..",
       tags: ["React", "API Integration", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
+      code: "https://github.com/3laa-812/adii",
+      demo: "https://adii-eg.vercel.app",
+      image: adiImg,
     },
     {
-      title: "Portfolio CMS",
-      description: "Content management system for portfolios",
+      title: "Portfolio",
+      description:
+        "A modern, responsive web application built with clean UI and scalable architecture, focusing on performance, accessibility, and real-world functionality",
       longDescription:
-        "A headless CMS specifically designed for developers and designers to manage their portfolio content with an intuitive admin panel.",
+        "This project demonstrates my ability to design and build professional front-end applications from concept to deployment. I translated the Figma design into a pixel-perfect interface using HTML, CSS, and JavaScript (or React/Next.js), ensuring responsiveness across all devices. The app includes dynamic interactions, clean component structure, and efficient data management, following best practices in performance and accessibility. It reflects my attention to detail, problem-solving mindset, and commitment to delivering smooth, user-friendly experiences",
       tags: ["React", "Node.js", "MongoDB", "AWS S3"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      code: "https://github.com/3laa-812/myPortfolio",
+      demo: "https://3laar.netlify.app",
+      image: portfolioImg,
     },
   ];
 
@@ -94,7 +115,9 @@ const Projects = () => {
 
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {project.description}
+                  </p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.slice(0, 3).map((tag, i) => (
@@ -110,11 +133,15 @@ const Projects = () => {
                   <div className="flex gap-2">
                     <Button size="sm" variant="ghost" className="gap-2">
                       <Github className="h-4 w-4" />
-                      Code
+                      <a target="_blank" href={project.code}>
+                        Code
+                      </a>
                     </Button>
                     <Button size="sm" variant="ghost" className="gap-2">
                       <ExternalLink className="h-4 w-4" />
-                      Demo
+                      <a target="_blank" href={project.demo}>
+                        Demo
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -124,7 +151,10 @@ const Projects = () => {
         </div>
       </div>
 
-      <Dialog open={selectedProject !== null} onOpenChange={() => setSelectedProject(null)}>
+      <Dialog
+        open={selectedProject !== null}
+        onOpenChange={() => setSelectedProject(null)}
+      >
         <DialogContent className="max-w-2xl">
           {selectedProject !== null && (
             <>
@@ -155,11 +185,15 @@ const Projects = () => {
                 <div className="flex gap-4 pt-4">
                   <Button className="flex-1 gap-2">
                     <Github className="h-4 w-4" />
-                    View Code
+                    <a target="_blank" href={projects[selectedProject].code}>
+                      View Code
+                    </a>
                   </Button>
                   <Button variant="outline" className="flex-1 gap-2">
                     <ExternalLink className="h-4 w-4" />
-                    Live Demo
+                    <a target="_blank" href={projects[selectedProject].demo}>
+                      Live Demo
+                    </a>
                   </Button>
                 </div>
               </div>
