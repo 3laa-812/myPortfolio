@@ -26,7 +26,7 @@ export default function Projects() {
     },
     {
       title: 'Cloud Resource Manager',
-      meta: 'Architecture study · Azure resource model · ASP.NET Core MVC · Solo · 2026',
+      meta: 'Architecture study · Azure resource model · ASP.NET Core MVC · team · 2026',
       problem: 'Understand cloud resource hierarchies by building one. Not reading about it — actually implementing the structural properties: subscriptions own resource groups, resource groups own resources, roles are scoped at any level, permissions propagate down but not up.',
       decisions: [
         'Hierarchical RBAC with inheritance. A user can be Owner at Subscription level (implicitly Owner of everything below), or Contributor at a specific Resource Group (no effect on siblings), or Reader on a single Resource.',
@@ -55,7 +55,7 @@ export default function Projects() {
     },
     {
       title: 'YES E-Commerce Storefront',
-      meta: 'Personal project → real business · Full-stack · Conversion-focused UI · 2024–present',
+      meta: 'Personal project → real business · Full-stack · Conversion-focused UI · 2026–present',
       problem: "I wanted a storefront for YES, a youth clothing brand. Most e-commerce solutions are either Shopify (expensive, not mine) or roll-your-own complexity. I wanted something in between: a custom storefront I controlled, built on tools I understood.",
       decisions: [
         'The checkout flow isn\'t about technology — it\'s about reducing friction at the exact moment a user is deciding. Every extra step is a percentage of abandoned orders. Started reading about UX patterns I\'d never considered as a frontend developer.',

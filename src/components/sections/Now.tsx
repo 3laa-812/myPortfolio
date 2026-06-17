@@ -15,7 +15,7 @@ export default function Now() {
       badge: 'ACTIVE',
       badgeColor: 'text-[var(--accent)] border-[var(--accent)] bg-[rgba(0,255,136,0.03)]',
       description: 'Understanding cloud hierarchies by building subscription/resource structures with RBAC.',
-      progress: 65,
+      progress: 100,
       barColor: 'bg-[var(--accent)]',
     },
     {
@@ -28,10 +28,10 @@ export default function Now() {
     },
     {
       name: 'Headless E-Commerce',
-      badge: 'PAUSED',
+      badge: 'COMPLETED',
       badgeColor: 'text-[var(--text2)] border-[var(--border2)] bg-[rgba(255,255,255,0.02)]',
       description: 'Static hosting experiments utilizing Astro Islands and Medusa.js backend.',
-      progress: 40,
+      progress: 100,
       barColor: 'bg-[var(--text3)]',
     },
   ];
